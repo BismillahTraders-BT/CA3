@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     return "Hello, World!"
 
-@app.route("/add/<int:a>/<int:b>")
+@app.route("/add/<a>/<b>")
 def add(a,b):
     return str(a+b)
 
