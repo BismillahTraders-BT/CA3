@@ -10,7 +10,7 @@ def sub(a, b):
     result = a - b
     return result
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route("/")
 def hello():
@@ -29,5 +29,5 @@ def sub(a, b):
 def mul(a, b):
     return a * b
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host="0.0.0.0")
