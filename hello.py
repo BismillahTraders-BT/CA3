@@ -1,15 +1,5 @@
 from flask import Flask
 
-def add(a,b):
-    return (a+b)
-
-def mul(a, b):
-    return a * b
-
-def sub(a, b):
-    result = a - b
-    return result
-
 app = Flask(__name__)
 
 @app.route("/")
