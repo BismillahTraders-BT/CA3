@@ -8,9 +8,7 @@ def hello():
 
 @app.route("/add/<int:a>/<int:b>")
 def add(a,b):
-    x = str(a+b)
-    print("Type X: ", type(x))
-    return x
+    return str(a+b)
 
 @app.route("/sub/<int:a>/<int:b>")
 def sub(a, b):
